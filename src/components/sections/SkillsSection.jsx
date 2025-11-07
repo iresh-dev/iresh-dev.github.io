@@ -5,76 +5,10 @@ import { useInView } from "react-intersection-observer";
 // Removed all unused local asset imports
 
 const skillsData = [
-  // // 🌐 --- Web Development Skills (Frontend + Backend + Frameworks)
-  // {
-  //   name: "MERN Stack",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-  //   color: "#00D8FF",
-  //   style: { borderRadius: "100%" },
-  // },
-  // {
-  //   name: "Laravel",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
-  //   color: "#FF2D20",
-  // },
-  // {
-  //   name: "React.js",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  //   color: "#61DAFB",
-  // },
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    color: "#000000",
-  },
-  // {
-  //   name: "Vue.js",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-  //   color: "#4FC08D",
-  // },
-  // {
-  //   name: "PHP",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-  //   color: "#777BB4",
-  // },
-  // {
-  //   name: "JavaScript",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-  //   color: "#F7DF1E",
-  // },
-  // {
-  //   name: "HTML",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  //   color: "#E34F26",
-  // },
-  // {
-  //   name: "CSS",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  //   color: "#1572B6",
-  // },
-  // {
-  //   name: "Bootstrap CSS",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  //   color: "#7952B3",
-  // },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-  //   color: "#38B2AC",
-  // },
-  // {
-  //   name: "Three.js",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg",
-  //   color: "#000000",
-  // },
-  // {
-  //   name: "WordPress",
-  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
-  //   color: "#21759B",
-  // },
-  // 🌐 --- End of Web Development Skills ---
-
-  // 🧠 --- Programming & Other Technologies ---
+  // 🌐 --- Web Development Skills (Frontend + Backend + Frameworks)
+ 
+  
+  // 🧠 --- Programming Languages ---
   {
     name: "Python",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -91,6 +25,34 @@ const skillsData = [
     color: "#7F52FF",
   },
 
+  // 🐍 --- Python Ecosystem (Frameworks, Libraries, AI/ML) ---
+
+  {
+    name: "Flask",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+    color: "#000000",
+  },
+  {
+    name: "NumPy",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+    color: "#013243",
+  },
+  {
+    name: "Pandas",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+    color: "#150458",
+  },
+  {
+    name: "TensorFlow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    color: "#FF6F00",
+  },
+  {
+    name: "OpenCV",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+    color: "#5C3EE8",
+  },
+
   // ⚙️ --- Automation & AI ---
   {
     name: "N8N",
@@ -102,7 +64,13 @@ const skillsData = [
     icon: "https://static.vecteezy.com/system/resources/previews/022/227/364/non_2x/openai-chatgpt-logo-icon-free-png.png",
     color: "#10A37F",
   },
+   {
+    name: "MERN Stack",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    color: "#00D8FF",
+  },
 ];
+
 
 const Skills = () => {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
