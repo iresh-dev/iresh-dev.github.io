@@ -42,15 +42,15 @@ const ProjectsSection = () => {
     //   icon: <Globe size={20} />,
     //   gradient: "from-blue-600 to-blue-800",
     // },
-    n8n: {
-      label: "n8n Automation",
-      icon: <Zap size={20} />,
-      gradient: "from-purple-600 to-pink-600",
-    },
+   
     ml: {
       label: "Machine Learning",
       icon: <Brain size={20} />,
       gradient: "from-emerald-600 to-teal-600",
+    }, n8n: {
+      label: "n8n Automation",
+      icon: <Zap size={20} />,
+      gradient: "from-purple-600 to-pink-600",
     },
     mobile: {
       label: "Mobile Apps",
