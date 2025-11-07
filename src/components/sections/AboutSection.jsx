@@ -24,7 +24,10 @@ const AboutMe = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-gray-900 relative min-h-screen flex items-center">
+    <section
+      id="about"
+      className="py-20 bg-gray-900 relative min-h-screen flex items-center"
+    >
       {/* Background elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-blue-900/10 to-transparent"></div>
@@ -71,9 +74,11 @@ const AboutMe = () => {
 
               <p className="text-gray-300 mb-6 leading-relaxed">
                 I am an undergraduate student at the University of Colombo,
-                Faculty of Technology, Honours in Bachelor of Information
-                and Communication Technology (BICT). I love creating innovative
-                web solutions and exploring new technologies.
+                Faculty of Technology, pursuing an Honours degree in Bachelor of
+                Information and Communication Technology (BICT). I’m passionate
+                about building automation tools and intelligent systems using
+                Python, and I love exploring innovative ways to simplify complex
+                tasks through code.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -106,7 +111,7 @@ const AboutMe = () => {
                 </div>
               </div>
 
-{/*               <div className="mt-8 cursor-pointer">
+              {/*               <div className="mt-8 cursor-pointer">
                 <button
                   type="button"
                   onClick={() => (window.location.href = "#contact")}

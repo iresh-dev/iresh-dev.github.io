@@ -5,40 +5,76 @@ import { useInView } from "react-intersection-observer";
 // Removed all unused local asset imports
 
 const skillsData = [
-  // Full-Stack & Frameworks (High Priority)
-  {
-    name: "MERN Stack",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    color: "#00D8FF",
-    style: { borderRadius: "100%" },
-  },
-  {
-    name: "Laravel",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
-    color: "#FF2D20",
-  },
-  {
-    name: "React.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    color: "#61DAFB",
-  },
+  // // 🌐 --- Web Development Skills (Frontend + Backend + Frameworks)
+  // {
+  //   name: "MERN Stack",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  //   color: "#00D8FF",
+  //   style: { borderRadius: "100%" },
+  // },
+  // {
+  //   name: "Laravel",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+  //   color: "#FF2D20",
+  // },
+  // {
+  //   name: "React.js",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  //   color: "#61DAFB",
+  // },
   {
     name: "Next.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     color: "#000000",
   },
-  {
-    name: "Vue.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-    color: "#4FC08D",
-  },
+  // {
+  //   name: "Vue.js",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+  //   color: "#4FC08D",
+  // },
+  // {
+  //   name: "PHP",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+  //   color: "#777BB4",
+  // },
+  // {
+  //   name: "JavaScript",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  //   color: "#F7DF1E",
+  // },
+  // {
+  //   name: "HTML",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  //   color: "#E34F26",
+  // },
+  // {
+  //   name: "CSS",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  //   color: "#1572B6",
+  // },
+  // {
+  //   name: "Bootstrap CSS",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  //   color: "#7952B3",
+  // },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  //   color: "#38B2AC",
+  // },
+  // {
+  //   name: "Three.js",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg",
+  //   color: "#000000",
+  // },
+  // {
+  //   name: "WordPress",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+  //   color: "#21759B",
+  // },
+  // 🌐 --- End of Web Development Skills ---
 
-  // Backend & Server-Side Languages
-  {
-    name: "PHP",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-    color: "#777BB4",
-  },
+  // 🧠 --- Programming & Other Technologies ---
   {
     name: "Python",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -55,52 +91,11 @@ const skillsData = [
     color: "#7F52FF",
   },
 
-  // Automation & Workflow
+  // ⚙️ --- Automation & AI ---
   {
     name: "N8N",
     icon: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.74.0/files/dark/n8n-color.png",
     color: "#EA4B71",
-  },
-
-  // Styling & UI Libraries
-  {
-    name: "Bootstrap CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-    color: "#7952B3",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-    color: "#38B2AC",
-  },
-
-  // Core Frontend Technologies
-  {
-    name: "JavaScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    color: "#F7DF1E",
-  },
-  {
-    name: "HTML",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    color: "#E34F26",
-  },
-  {
-    name: "CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    color: "#1572B6",
-  },
-
-  // Specialized & CMS
-  {
-    name: "Three.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg",
-    color: "#000000",
-  },
-  {
-    name: "WordPress",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
-    color: "#21759B",
   },
   {
     name: "AI Tools",

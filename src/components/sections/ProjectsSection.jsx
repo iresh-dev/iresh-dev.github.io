@@ -17,31 +17,31 @@ import {
 } from "lucide-react";
 
 import {
-  fullStackProjects,
-  frontEndProjects,
-  wordpressProjects,
+  // fullStackProjects,
+  // frontEndProjects,
+  // wordpressProjects,
   automationProjects,
   machineLearningProjects,
   mobileProjects,
 } from "../portfolioData";
 
 const ProjectsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("n8n");
   const [currentPage, setCurrentPage] = useState(0);
   const [selectedProject, setSelectedProject] = useState(null);
   const [hoveredCard, setHoveredCard] = useState(null);
 
   const categories = {
-    all: {
-      label: "All Projects",
-      icon: <Rocket size={20} />,
-      gradient: "from-blue-600 to-cyan-500",
-    },
-    web: {
-      label: "Web Applications",
-      icon: <Globe size={20} />,
-      gradient: "from-blue-600 to-blue-800",
-    },
+    // all: {
+    //   label: "All Projects",
+    //   icon: <Rocket size={20} />,
+    //   gradient: "from-blue-600 to-cyan-500",
+    // },
+    // web: {
+    //   label: "Web Applications",
+    //   icon: <Globe size={20} />,
+    //   gradient: "from-blue-600 to-blue-800",
+    // },
     n8n: {
       label: "n8n Automation",
       icon: <Zap size={20} />,
@@ -61,21 +61,21 @@ const ProjectsSection = () => {
 
   const getProjectsByCategory = () => {
     switch (activeCategory) {
-      case "all":
-        return [
-          ...fullStackProjects,
-          ...frontEndProjects,
-          ...wordpressProjects,
-          ...automationProjects,
-          ...machineLearningProjects,
-          ...mobileProjects,
-        ];
-      case "web":
-        return [
-          ...fullStackProjects,
-          ...frontEndProjects,
-          ...wordpressProjects,
-        ];
+      // case "all":
+      //   return [
+      //     ...fullStackProjects,
+      //     ...frontEndProjects,
+      //     ...wordpressProjects,
+      //     ...automationProjects,
+      //     ...machineLearningProjects,
+      //     ...mobileProjects,
+      //   ];
+      // case "web":
+      //   return [
+      //     ...fullStackProjects,
+      //     ...frontEndProjects,
+      //     ...wordpressProjects,
+      //   ];
       case "n8n":
         return automationProjects;
       case "ml":
